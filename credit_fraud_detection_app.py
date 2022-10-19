@@ -40,7 +40,7 @@ st.markdown("<h2 style='text-align: center; color: white;'>Transaction Informati
 
 st.table(df_coll)
 
-st.subheader('Click on 'PREDICT' button given below, if configuration is OK')
+st.subheader('Click on PREDICT button given below, if configuration is OK')
 
 if st.button('PREDICT'): 
     if prediction[0]==0:

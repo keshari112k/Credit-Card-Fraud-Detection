@@ -34,16 +34,13 @@ user_inputs = df_coll
 prediction = model.predict(user_inputs)
 
 
-html_temp = """
-<div style="background-color: Black;padding:10px"> 
-<h2 style="color: white; text-align:center;">Fraud Detection Prediction</h2>
-</div><br>"""
+
 
 st.markdown("<h2 style='text-align: center; color: white;'>Transaction Information</h2>", unsafe_allow_html=True)
 
 st.table(df_coll)
 
-st.subheader('Click PREDICT if configuration is OK')
+st.subheader('Click on 'PREDICT' button given below, if configuration is OK')
 
 if st.button('PREDICT'): 
     if prediction[0]==0:

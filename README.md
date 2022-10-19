@@ -3,5 +3,5 @@ In this kernel we will use various predictive models to see how accurate they ar
 
 
 
-#For App
+#For Web Application
 link: https://keshari112k-credit-card-fraud-credit-fraud-detection-app-vsdf31.streamlitapp.com/

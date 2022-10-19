@@ -6,10 +6,8 @@ from PIL import Image
 import base64 
 st.sidebar.title('Transaction Information')
 
-html_temp = """
-<div style="background-color: Blue;padding:10px"> 
-<h2 style="color: white; text-align:center;">Fraud Detection</h2> 
-</div><br> """
+
+st.markdown("<h1 style='text-align: center; color: white;'>Credit Fraud Detection</h1>", unsafe_allow_html=True)
 
 
 model = pickle.load(open('logistic_regression_model', 'rb')) 
@@ -41,7 +39,7 @@ html_temp = """
 <h2 style="color: white; text-align:center;">Fraud Detection Prediction</h2>
 </div><br>"""
 
-st.markdown("<h1 style='text-align: center; color: black;'>Transaction Information</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: white;'>Transaction Information</h2>", unsafe_allow_html=True)
 
 st.table(df_coll)
 
